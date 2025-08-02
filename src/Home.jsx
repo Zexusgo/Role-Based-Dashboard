@@ -23,7 +23,6 @@ function MyForum() {
     event.preventDefault();
     if (email.includes("@gmail.com") && password.length>0) {
       setUser({email, password, role})
-      console.log("User set:", { email, password, role });
 
               navigate(`/${role}`)
         return setError("")
